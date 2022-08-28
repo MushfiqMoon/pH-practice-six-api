@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        section {
+            max-width: 1120px;
+            margin: auto;
+        }
+
+        #country-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .country {
+            border: 2px solid salmon;
+            border-radius: 10px;
+            background-color: rgb(250 128 114 / 20%);
+            padding: 10px;
+        }
+
+        img {
+            width: 50%;
+        }
+
+        .moon {
+            grid-row-start: 2;
+            grid-column-end: 5;
+            grid-column-start: 1;
+            background: red;
+            padding: 20px;
+        }
+
+        #detail {
+            background: #fee6e3;
+            border: 2px solid salmon;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 300px;
+            position: fixed;
+        }
+        .none{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="detail" class="none"></div>
+    <h1>fetching data form <a href="https://restcountries.com/">Rest Countries</a></h1>
+    <section>
+        <div id="country-container">
+            <!-- <div class="country">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQYVmkfdZ7GUYtp-Kp7G1qzjzuo0RP11rs9Q&usqp=CAU"
+                    alt="">
+                <h3>Name: ${country.name.common}</h3>
+                <p>Capital: ${country.capital ? country.capital : 'No Capital'}</p>
+            </div> -->
+        </div>
+    </section>
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
